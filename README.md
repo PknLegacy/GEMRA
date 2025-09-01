@@ -162,5 +162,5 @@ So kannst du dein Projekt nach und nach mit Inhalt füllen.
 
 ---
 
-👉 Soll ich dir diesen README gleich als **Datei in deinen Projektordner schreiben und eine neue ZIP bauen**, damit du ihn sofort nutzen kannst?
----
+
+
