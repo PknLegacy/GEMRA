@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Beispiel-Eintrag 12-1",
+    "category": "videos",
+    "url": "https://example.com/vid"
+  },
+  {
+    "title": "Beispiel-Eintrag 12-2",
+    "category": "links",
+    "url": "https://example.com/link"
+  }
+]
