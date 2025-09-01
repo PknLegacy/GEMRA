@@ -1,1 +1,0 @@
-(async function(){const cfg=await Utils.readJSON('config.json');console.log('App loaded',cfg.version);})();
