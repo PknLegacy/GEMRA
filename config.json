@@ -1,0 +1,62 @@
+{
+  "version": "2.1",
+  "site": {
+    "title": "Streaming Hub",
+    "defaultRoute": "home",
+    "cookie": {
+      "askOnStart": true,
+      "text": "Wir verwenden Cookies und sammeln ggf. Standort (Land) & Browserdaten zur Verbesserung der Website.",
+      "policyUrl": "#/credits"
+    }
+  },
+  "ui": {
+    "autoFullscreenAfterClickSeconds": 5,
+    "blockContextMenu": true,
+    "blockSelection": true,
+    "blockDevtools": true
+  },
+  "social": [
+    {
+      "platform": "YouTube",
+      "name": "@PknLegacy",
+      "url": "https://www.youtube.com/@PknLegacy"
+    },
+    {
+      "platform": "YouTube",
+      "name": "@WinterEnterich22",
+      "url": "https://www.youtube.com/@WinterEnterich22"
+    },
+    {
+      "platform": "Twitch",
+      "name": "PknLegacy",
+      "url": "https://twitch.tv/PknLegacy"
+    },
+    {
+      "platform": "Twitch",
+      "name": "winterente20001",
+      "url": "https://twitch.tv/winterente20001"
+    },
+    {
+      "platform": "Discord",
+      "name": "6RRNXUGRAk",
+      "url": "https://discord.gg/6RRNXUGRAk"
+    }
+  ],
+  "creditsLinks": [
+    "https://pknlegacy.github.io/",
+    "https://pknlegacy.github.io/SCP-Foundation512_HomePage/",
+    "https://pknlegacy.github.io/SCP_Archiev512/",
+    "https://pknlegacy.github.io/Darknet_Acces-V542-.51.32/",
+    "https://pknlegacy.github.io/SCP-Terminal512/",
+    "https://pknlegacy.github.io/SecureSCP_Link-OF-Status-/"
+  ],
+  "feeds": {
+    "refreshHours": 24,
+    "youtube": {
+      "useApi": false
+    },
+    "twitch": {
+      "useApi": false
+    }
+  }
+}
