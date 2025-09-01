@@ -1,0 +1,37 @@
+{
+  "version": "3.0",
+  "site": {
+    "title": "Streaming Hub",
+    "defaultRoute": "home",
+    "cookie": {
+      "askOnStart": true,
+      "text": "Wir verwenden Cookies und sammeln ggf. Standort- & Browserdaten.",
+      "policyUrl": "#/credits"
+    }
+  },
+  "ui": {
+    "autoFullscreenAfterClickSeconds": 5,
+    "blockContextMenu": true,
+    "blockSelection": true,
+    "blockDevtools": true
+  },
+  "social": [
+    {
+      "platform": "YouTube",
+      "name": "Streamer1",
+      "url": "https://youtube.com/@Streamer1"
+    },
+    {
+      "platform": "Twitch",
+      "name": "Streamer2",
+      "url": "https://twitch.tv/Streamer2"
+    }
+  ],
+  "creditsLinks": [
+    "https://youtube.com",
+    "https://twitch.tv"
+  ],
+  "feeds": {
+    "refreshHours": 24
+  }
+}
