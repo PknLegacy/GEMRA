@@ -1,0 +1,9 @@
+(function(){
+const routes={home:rh,social:rs,search:rq,credits:rc};
+async function routeTo(h){const r=(h||location.hash||'#/home').replace('#/','');const root=Utils.el('#app');root.classList.remove('show');setTimeout(async()=>{(routes[r]||routes.home)(root);setTimeout(()=>root.classList.add('show'),50)},200);}
+async function rh(root){root.innerHTML=Utils.el('#tpl-home').innerHTML;const live=await Utils.readJSON('assets/json/live_streams.json');live.streams.forEach(s=>{let li=Utils.create('li');li.textContent=s.channel+': '+s.title;root.querySelector('#live-list').appendChild(li);});}
+async function rs(root){root.innerHTML=Utils.el('#tpl-social').innerHTML;const cfg=await Utils.readJSON('config.json');cfg.social.forEach(it=>{let li=Utils.create('li');li.innerHTML='<a href="'+it.url+'">'+it.platform+': '+it.name+'</a>';root.querySelector('#social-links').appendChild(li);});}
+async function rq(root){root.innerHTML=Utils.el('#tpl-search').innerHTML;const data=await Utils.readJSON('assets/json/data_1.json');const inp=root.querySelector('#search-input');const res=root.querySelector('#search-results');inp.addEventListener('input',()=>{res.innerHTML='';data.filter(d=>JSON.stringify(d).toLowerCase().includes(inp.value.toLowerCase())).forEach(d=>{let div=Utils.create('div');div.textContent=d.title;res.appendChild(div);});});}
+async function rc(root){root.innerHTML=Utils.el('#tpl-credits').innerHTML;const cfg=await Utils.readJSON('config.json');cfg.creditsLinks.forEach(u=>{let a=Utils.create('a',{href:u,textContent:u,target:'_blank'});root.querySelector('#credit-links').appendChild(a);});}
+window.addEventListener('hashchange',()=>routeTo(location.hash));window.addEventListener('DOMContentLoaded',()=>routeTo(location.hash));
+})();
