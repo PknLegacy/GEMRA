@@ -1,1 +1,0 @@
-window.Utils={el:(s,r=document)=>r.querySelector(s),create:(t,a={})=>Object.assign(document.createElement(t),a),readJSON:async p=>(await fetch(p+`?v=${Date.now()}`)).json()};
